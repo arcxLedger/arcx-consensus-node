@@ -6,3 +6,5 @@ plugins { id("io.github.arcxLedger.gradle.build") }
 rootProject.name = "arcx-consensus-node"
 
 include("platform-sdk")
+include("platform-sdk:junit-extensions")
+findProject(":platform-sdk:junit-extensions")?.name = "junit-extensions"
