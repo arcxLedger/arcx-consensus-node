@@ -1,7 +1,4 @@
-plugins {
-    id("java")
-}
+// SPDX-License-Identifier: Apache-2.0
+plugins { id("java") }
 
 group = "io.github.arcxLedger"
-version = "1.0-SNAPSHOT"
-

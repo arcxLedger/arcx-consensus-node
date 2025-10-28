@@ -3,11 +3,26 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/../arcx-gradle-conventions" name="arcx-gradle-conventions">
+                <projects>
+                  <project path="$PROJECT_DIR$/../arcx-gradle-conventions" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="" />
+        <option name="gradleJvm" value="temurin-21" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/arcx-dependency-versions" />
+            <option value="$PROJECT_DIR$/gradle/aggregation" />
+            <option value="$PROJECT_DIR$/platform-sdk" />
+            <option value="$PROJECT_DIR$/../arcx-gradle-conventions" />
           </set>
         </option>
       </GradleProjectSettings>
